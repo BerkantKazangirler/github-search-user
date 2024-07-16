@@ -8,7 +8,7 @@
   <title>GitHub User Search</title>
 </head>
 
-<body class="bg-slate-100 transition-colors duration-500 ease-out dark:bg-slate-800">
+<body class="bg-slate-100 transition-colors duration-500 ease-out p-5 md:p-0 dark:bg-slate-800">
   <div class="flex items-center flex-col w-auto m-auto container h-auto max-w-256">
     <div class="flex flex-row justify-between pt-16 pb-8 w-full">
       <h1 class="font-semibold font-mono text-xl text-sky-900 dark:text-white">devfinder</h1>
@@ -18,31 +18,31 @@
           class="ml-2 h-4 w-4 relative top-0.5">
       </button>
     </div>
-    <div class="bg-zinc-50 flex flex-row justify-around ps-5 pe-2 w-full rounded-2xl dark:bg-slate-700 dark:text-white"">
+    <div class="bg-zinc-50 flex flex-row justify-around ps-5 pe-2 w-full rounded-2xl dark:bg-slate-700 dark:text-white">
       <div class="w-full flex flex-row justify-between p-1">
         <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/icon-search.svg" class="w-7 h-fit relative top-3">
-        <input type="text" placeholder="Search GitHub Username..." value="berkantkazangirler" class="bg-transparent border-none focus-visible:outline-none w-full ml-5 font-mono text-opacity-55" id="search">
+        <input type="text" placeholder="Search GitHub Username..." class="bg-transparent border-none focus-visible:outline-none w-full ml-5 font-mono text-opacity-55" id="search">
         <button class="font-mono bg-blue-400 p-3 rounded-xl text-white font-semibold" id="btn">Search</button>
       </div>
     </div>
     <div class="bg-zinc-50 flex flex-row gap-5 w-full rounded-2xl mt-7 pb-5 dark:bg-slate-700 dark:text-white">
       <div class="flex p-5">
-        <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/octocat.png" id="img" class="w-32 h-fit rounded-full">
+        <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/octocat.png" id="img" class="sm:min-w-20 sm:max-w-24 h-fit min-w-18 max-w-20 rounded-full">
       </div>
-      <div class="flex flex-col w-full pe-5">
-        <div class="flex flex-row justify-between mt-5">
-          <span class="text-black font-mono font-bold text-2xl dark:text-white" id="name">The Octocat</span>
-          <span class="text-black/50 font-mono dark:text-white" id="joindate">Joined 25 Jan 2011</span>
+      <div class="flex flex-col w-fit pe-5 sm:w-full">
+        <div class="flex flex-col sm:flex-row justify-around mt-5 sm:justify-between sm:w-full w-fit">
+          <span class="text-black font-mono font-bold text-2xl dark:text-white w-fit" id="name">The Octocat</span>
+          <span class="text-black/50 font-mono dark:text-white w-fit" id="joindate">Joined 25 Jan 2011</span>
         </div>
-        <div class="flex w-full">
-          <a href="#" target="_blank" class="font-mono text-blue-500" id="url">@octocat</a>
+        <div class="flex w-fit">
+          <a href="#" target="_blank" class="font-mono text-blue-500 w-fit" id="url">@octocat</a>
         </div>
-        <div class="flex w-full mt-7">
+        <div class="flex w-fit mt-7">
           <span class="font-mono text-black/50 dark:text-white" id="bio">This profile has no bio</span>
         </div>
-        <div class="bg-gray-400/30 rounded-2xl p-4 mt-5 dark:bg-slate-900">
-          <div class="flex flex-row gap-32">
-            <div class="flex flex-col ml-8">
+        <div class="bg-gray-400/30 rounded-2xl p-4 mt-5 w-fit container dark:bg-slate-900">
+          <div class="flex flex-row gap-5 sm:gap-32">
+            <div class="flex flex-col ml-2 sm:ml-8">
               <p class="font-mono">Repos</p>
               <span class="font-bold" id="reponum">8</span>
             </div>
@@ -56,22 +56,22 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-row mt-6 w-100 justify-between">
-          <div class="flex flex-row">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-0 mt-6 w-fit sm:w-full justify-between">
+          <div class="flex flex-row w-fit">
             <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/icon-location.svg" class="w-4 h-fit">
             <span class="font-mono text-blue-900/80 ml-3 dark:text-white" id="city">San Francisco</span>
           </div>
-          <a href="#" class="flex flex-row">
+          <a href="#" class="flex flex-row w-fit">
             <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/icon-twitter.svg" class="w-7 h-fit">
             <span class="font-mono text-blue-900/80 ml-3 dark:text-white" id="twitter">Not available</span>
           </a>
         </div>
-        <div class="flex flex-row mt-6 w-100 justify-between">
+        <div class="flex flex-col sm:flex-row mt-6 gap-3 sm:gap-0 w-fit sm:w-full justify-between">
           <a href="#" class="flex w-fit flex-row">
             <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/icon-website.svg" class="w-4 h-4">
             <span class="font-mono text-blue-900/80 ml-3 w-24 dark:text-white" id="blogsite">github.blog</span>
           </a>
-          <div class="flex flex-row">
+          <div class="flex flex-row w-fit">
             <img src="https://kunalshakya.github.io/GitHub-User-Search-App/assets/icon-company.svg" class="w-6 h-fit">
             <span class="font-mono text-blue-900/80 ml-3 dark:text-white" id="duty">@github</span>
           </div>
