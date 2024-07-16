@@ -74,10 +74,10 @@ btn.addEventListener("click", (e) => {
       followers.innerHTML = data.followers
       reponum.innerHTML = data.public_repos
       following.innerHTML = data.following
-      if(data.blog == null) {
-        blog = "No Site"
+      if(data.blog == "" || data.blog == null) {
+        blogsite.innerHTML = "Not available"
       } else {
-        blogsite.innerText = data.blog
+        blogsite.innerHTML = data.blog
       }
       storageLst();
     }
@@ -102,7 +102,7 @@ const loadlast = () => {
     console.log("Yeni Giriş")
   } else {
     document.querySelector("#search").value = lastsearch;
-    //btn.click();
+    btn.click();
   }
 }
 
